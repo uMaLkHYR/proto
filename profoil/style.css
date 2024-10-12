@@ -1,0 +1,126 @@
+/* .animated-rewrite-text {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    overflow: hidden;
+}
+
+@keyframes rewrite {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    50.1% {
+        content: "New Animated Text";
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-rewrite-text {
+    animation: rewrite 3s ease-in-out infinite;
+} */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+}
+
+.text{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+}
+
+.text_hide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+.text_cursor{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    border-left: 3px solid black;
+} */
+
+
+@keyframes typing {
+  100% {
+        left: 100%;
+        margin: 0 -35px 0 35px ;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.static{
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    color: #000000;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #555;
+    /* overflow: hidden; */
+    white-space: nowrap;
+    width: 0;
+}
+
+h3{
+    position: relative;
+}
+h3::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: #000;
+    border-left: 2px solid #fc6d6d;
+    animation: typing 1.5s steps(10)  infinite;
+} 

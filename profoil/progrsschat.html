@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .progress-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: conic-gradient(#4CAF50 50%, #ddd 0); /* Adjust 75% to change progress */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-circle-inner {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-circle-fill {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.progress-circle-text {
+    position: absolute;
+    font-size: 20px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="progress-circle">
+        <div class="progress-circle-inner">
+          <div class="progress-circle-fill"></div>
+        </div>
+        <span class="progress-circle-text">75%</span>
+      </div>
+      
+</body>
+</html>
